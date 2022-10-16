@@ -1,0 +1,25 @@
+{
+  "name": "airQuality",
+  "version": "1.0.0",
+  "description": "the air quality information",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "nodemon app.js &"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "youssef",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5",
+    "node-cron": "^3.0.2",
+    "node-fetch": "^3.2.10",
+    "nodemon": "^2.0.20",
+    "request": "^2.88.2",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.5.0"
+  }
+}
