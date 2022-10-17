@@ -10,6 +10,10 @@ var RecordSchema = mongoose.Schema({
         unique:true,
        
       },
+      DateTime : {
+        type:Date,
+        required : true,
+    },
       City : {
           type:String,
           required : true,

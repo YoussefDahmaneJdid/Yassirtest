@@ -4,8 +4,8 @@
   "description": "the air quality information",
   "main": "index.js",
   "scripts": {
-    "test": "npm test",
-    "start": "nodemon app.js &"
+    "start": "nodemon app.js &",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha */*.test.js --timeout 10000"
   },
   "keywords": [
     "node"
@@ -21,5 +21,11 @@
     "request": "^2.88.2",
     "swagger-jsdoc": "^6.2.5",
     "swagger-ui-express": "^4.5.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "expect": "^29.2.0",
+    "mocha": "^10.1.0",
+    "supertest": "^6.3.0"
   }
 }

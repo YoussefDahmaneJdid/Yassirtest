@@ -6,7 +6,7 @@ var airRouter = require(`${__dirname}/routes/air.js`);
 const cron = require('node-cron');
 const recordControllers = require('./controllers/recordControllers');
 const app = express();
-
+var {mongoose} = require('./db/mongoose');
 var port = process.env.PORT || 5000;
 const swaggerOptions = {
     swaggerDefinition: {
@@ -29,3 +29,5 @@ cron.schedule('* * * * *', () => {
 app.use('/air', airRouter);
 
 app.listen(port, ()=>console.log('Server listening'));
+
+module.exports = {app};
